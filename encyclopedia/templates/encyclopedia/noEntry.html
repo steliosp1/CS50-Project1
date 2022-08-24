@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+  No entry
+{% endblock %}
+
+{% block body %}
+  <h1>There is no entry like {{ entryTitle }} registered!</h1>
+  <br>
+  <h4>Browse through the main page by pressing <a href="{% url 'index' %}">here</a></h4>
+  <h4>Or try somithing else through our search engine!</h4>
+{% endblock %}
